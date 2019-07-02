@@ -9,21 +9,25 @@
         <a class="nav-link" routerLink='/home' >Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink='/customer'>Customers</a>
+        <a class="nav-link" routerLink='/customers'>Customers</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Suppliers</a>
+        <a class="nav-link" routerLink='/suppliers'>Suppliers</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" routerLink="" id="dropdown_almacen" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Storing</a>
+        <a class="nav-link dropdown-toggle"  id="dropdown_storing" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Storing</a>
         <div class="dropdown-menu" aria-labelledby="dropdown_storing">
-          <a class="dropdown-item" routerLink="/storing">Listado</a>
-          <a class="dropdown-item" routerLink="/storing/in">Entradas</a>
-          <a class="dropdown-item" routerLink="/storing/out">Salidas</a>
+          <a class="dropdown-item" routerLink="/storing">List</a>
+          <a class="dropdown-item" routerLink="/storing/in">Incoming</a>
+          <a class="dropdown-item" routerLink="/storing/out">Outgoing</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Billing</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"  id="dropdown_billing" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Billing</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown_billing">
+          <a href="" class="dropdown-item" routerLink="/billing/fromsuppliers">From suppliers</a>
+          <a href="" class="dropdown-item" routerLink="/billing/tocustomers">To customers</a>
+        </div>
       </li>
     </ul>
   </div>

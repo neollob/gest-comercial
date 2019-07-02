@@ -2,16 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { BillingRoutingModule } from './billing-routing.module';
-import { FromSuppliersComponent } from './from-suppliers/from-suppliers.component';
-import { ToCustomersComponent } from './to-customers/to-customers.component';
-
+import { FromsuppliersComponent } from './fromsuppliers/fromsuppliers.component';
+import { TocustomersComponent } from './tocustomers/tocustomers.component';
 
 @NgModule({
-  declarations: [FromSuppliersComponent, ToCustomersComponent],
+  declarations: [FromsuppliersComponent,TocustomersComponent],
   imports: [
     CommonModule,
     BillingRoutingModule
   ],
-  exports: [FromSuppliersComponent, ToCustomersComponent]
+  exports: [FromsuppliersComponent,TocustomersComponent]
 })
 export class BillingModule { }

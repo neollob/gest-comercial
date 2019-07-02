@@ -1,21 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CustomerListComponent } from './customer/customer-list/customer-list.component';
-import { NotfoundComponent } from './commons/notfound/notfound.component';
 import { HomeComponent } from './commons/home/home.component';
-import { CustomerDataComponent } from './customer/customer-data/customer-data.component';
+//import { CustomerslistComponent } from './customers/customerslist/customerslist.component';
+import { SupplierslistComponent } from './suppliers/supplierslist/supplierslist.component';
+import { NotfoundComponent } from './commons/notfound/notfound.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component: HomeComponent},
-  {path:'customer', component:CustomerListComponent},
-  {path:'customer/:id', component: CustomerDataComponent},
-  {path: 'storing',
-   /* loadChildren: './storing/storing.module#StoringModule' */
-   loadChildren: () => import('./storing/storing.module').then(mod => mod.StoringModule)
-  },
-  {path:'**', component:NotfoundComponent}
-
+  {path:'customers',loadChildren:()=>import('./customers/customers.module').then(mod=>mod.CustomersModule)},
+  {path:'suppliers',component:SupplierslistComponent},
+  {path:'storing',loadChildren:()=>import('./storing/storing.module').then(mod=>mod.StoringModule)},
+  {path:'billing',loadChildren:()=>import('./billing/billing.module').then(mod=>mod.BillingModule)},
+  {path:'**',component:NotfoundComponent}
 ];
 
 @NgModule({

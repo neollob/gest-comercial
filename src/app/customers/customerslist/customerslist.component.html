@@ -1,0 +1,5 @@
+<h3>Customers List</h3>
+
+<div *ngFor='let customer of customers' class="list-group">
+  <a routerLink='customer_detail/{{customer.index}}' class="list-group-item list-group-item-action">{{customer.name.first}} {{customer.name.last}}</a>
+</div>

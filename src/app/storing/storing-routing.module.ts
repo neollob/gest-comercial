@@ -1,21 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { StoringListComponent } from './storing-list/storing-list.component';
-import { StoringIncomingComponent } from './storing-incoming/storing-incoming.component';
-import { StoringOutgoingComponent } from './storing-outgoing/storing-outgoing.component';
+import { StoringlistComponent } from './storinglist/storinglist.component';
+import { StoringincomingComponent } from './storingincoming/storingincoming.component';
+import { StoringoutgoingComponent } from './storingoutgoing/storingoutgoing.component';
 
-const routes: Routes = [ {
-  path: '',
-  component: StoringListComponent
-},
-{
-  path: 'in',
-  component: StoringIncomingComponent
-},
-{
-  path: 'out',
-  component: StoringOutgoingComponent
-}];
+const routes: Routes = [
+  {path:'',component: StoringlistComponent},
+  {path:'in',component: StoringincomingComponent},
+  {path:'out',component: StoringoutgoingComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

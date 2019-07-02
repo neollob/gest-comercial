@@ -1,0 +1,22 @@
+<ng-container>
+  <div class="detail">
+  <div class="header">
+    <img src={{selectedCust.picture}} alt="">
+    <h3>{{selectedCust.name.first}} {{selectedCust.name.last}}</h3>
+  </div>
+  <section>
+    <div class='dataItem'><label for="age">Age: </label><div>{{selectedCust.age}}</div></div>
+    <div class='dataItem'><label for="eyeColor">Eyes Color: </label><div>{{selectedCust.eyeColor}}</div></div>
+    <div class='dataItem'><label for="balance">Balance: </label><div>{{selectedCust.balance}}</div></div>
+    <div class='dataItem'><label for="company">Company: </label><div>{{selectedCust.company}}</div></div>
+    <div class='dataItem'><label for="email">e-Mail: </label><div>{{selectedCust.email}}</div></div>
+    <div class='dataItem'><label for="phone">Phone: </label><div>{{selectedCust.phone}}</div></div>
+    <div class='dataItem'><label for="address">Address: </label><div>{{selectedCust.address}}</div></div>
+  </section>
+  </div>
+</ng-container>
+<ng-template #nocustomerselected>
+  No customer selected
+</ng-template>
+
+

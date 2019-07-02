@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { StoringRoutingModule } from './storing-routing.module';
-import { StoringListComponent } from './storing-list/storing-list.component';
-import { StoringIncomingComponent } from './storing-incoming/storing-incoming.component';
-import { StoringOutgoingComponent } from './storing-outgoing/storing-outgoing.component';
+import { StoringlistComponent } from './storinglist/storinglist.component';
+import { StoringincomingComponent } from './storingincoming/storingincoming.component';
+import { StoringoutgoingComponent } from './storingoutgoing/storingoutgoing.component';
 
 @NgModule({
-  declarations: [StoringListComponent, StoringIncomingComponent, StoringOutgoingComponent],
+  declarations: [StoringlistComponent,StoringincomingComponent, StoringoutgoingComponent],
   imports: [
     CommonModule,
     StoringRoutingModule
   ],
-  exports: [StoringListComponent, StoringIncomingComponent, StoringOutgoingComponent]
+  exports: [StoringlistComponent,StoringincomingComponent, StoringoutgoingComponent]
 })
 export class StoringModule { }
