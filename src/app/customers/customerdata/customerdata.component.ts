@@ -4,11 +4,11 @@ import { ActivatedRoute } from '@angular/router';
 import customers from '../../shared/data/customers.model';
 
 @Component({
-  selector: 'app-customersdata',
-  templateUrl: './customersdata.component.html',
-  styleUrls: ['./customersdata.component.scss']
+  selector: 'app-customerdata',
+  templateUrl: './customerdata.component.html',
+  styleUrls: ['./customerdata.component.scss']
 })
-export class CustomersdataComponent implements OnInit {
+export class CustomerdataComponent implements OnInit {
   identifier: any;
   selectedCust:Customer;
   custom = [];

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CustomerslistComponent } from './customerslist/customerslist.component';
-import { CustomersdataComponent } from './customersdata/customersdata.component';
+import { CustomerdataComponent } from './customerdata/customerdata.component';
 
 const routes: Routes = [
   {
@@ -9,7 +9,7 @@ const routes: Routes = [
   component:CustomerslistComponent
   },{
   path:'customer_detail/:id',
-  component:CustomersdataComponent
+  component:CustomerdataComponent
 }
 ];
 
