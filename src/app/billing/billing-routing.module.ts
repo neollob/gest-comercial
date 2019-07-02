@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FromsuppliersComponent } from './fromsuppliers/fromsuppliers.component';
-import { TocustomersComponent } from './tocustomers/tocustomers.component';
+import { FromsuppliersComponent } from './from-suppliers/from-suppliers.component';
+import { TocustomersComponent } from './to-customers/to-customers.component';
 
 const routes: Routes = [
-  { path: 'fromsuppliers', component: FromsuppliersComponent },
-  { path: 'tocustomers', component: TocustomersComponent }
+  { path: 'fromSuppliers', component: FromsuppliersComponent },
+  { path: 'toCustomers', component: TocustomersComponent }
 ];
 
 @NgModule({

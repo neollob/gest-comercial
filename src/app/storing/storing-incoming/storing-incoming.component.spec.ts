@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StoringlistComponent } from './storinglist.component';
+import { StoringincomingComponent } from './storing-incoming.component';
 
-describe('StoringlistComponent', () => {
-  let component: StoringlistComponent;
-  let fixture: ComponentFixture<StoringlistComponent>;
+describe('StoringincomingComponent', () => {
+  let component: StoringincomingComponent;
+  let fixture: ComponentFixture<StoringincomingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StoringlistComponent ]
+      declarations: [ StoringincomingComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StoringlistComponent);
+    fixture = TestBed.createComponent(StoringincomingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SupplierslistComponent } from './supplierslist/supplierslist.component';
-import { SuppliersrequestComponent } from './suppliersrequest/suppliersrequest.component';
+import { SupplierslistComponent } from './suppliers-list/suppliers-list.component';
+import { SuppliersrequestComponent } from './suppliers-request/suppliers-request.component';
 
 const routes: Routes = [{
   path: '',

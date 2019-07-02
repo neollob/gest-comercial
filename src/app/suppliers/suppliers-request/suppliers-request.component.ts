@@ -4,9 +4,9 @@ import Supplier from '../../shared/interfaces/supplier.interface';
 import suppliers from '../../shared/data/suppliers.model';
 
 @Component({
-  selector: 'app-suppliersrequest',
-  templateUrl: './suppliersrequest.component.html',
-  styleUrls: ['./suppliersrequest.component.scss']
+  selector: 'app-suppliers-request',
+  templateUrl: './suppliers-request.component.html',
+  styleUrls: ['./suppliers-request.component.scss']
 })
 export class SuppliersrequestComponent implements OnInit {
   identifier: any;

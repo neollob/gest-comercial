@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StoringoutgoingComponent } from './storingoutgoing.component';
+import { StoringoutgoingComponent } from './storing-outgoing.component';
 
 describe('StoringoutgoingComponent', () => {
   let component: StoringoutgoingComponent;

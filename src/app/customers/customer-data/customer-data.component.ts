@@ -4,9 +4,9 @@ import { ActivatedRoute } from '@angular/router';
 import customers from '../../shared/data/customers.model';
 
 @Component({
-  selector: 'app-customerdata',
-  templateUrl: './customerdata.component.html',
-  styleUrls: ['./customerdata.component.scss']
+  selector: 'app-customer-data',
+  templateUrl: './customer-data.component.html',
+  styleUrls: ['./customer-data.component.scss']
 })
 export class CustomerdataComponent implements OnInit {
   identifier: any;
