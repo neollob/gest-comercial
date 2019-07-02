@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import customers from '../../shared/data/data.model';
+import customers from '../../shared/data/customers.model';
 
 @Component({
   selector: 'app-customerslist',

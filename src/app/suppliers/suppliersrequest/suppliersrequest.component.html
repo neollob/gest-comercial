@@ -1,1 +1,18 @@
-<p>Suppliers Request works!</p>
+<ng-container *ngIf='selectedSupplier!=undefined; else nosupplierselected'>
+  <div class="detail">
+  <div class="header">
+    <h3>{{selectedSupplier.company}}</h3>
+  </div>
+  <section>
+    <div class='dataItem'><label for="balance">Balance: </label><div>{{selectedSupplier.balance}}</div></div>
+    <div class='dataItem'><label for="email">e-Mail: </label><div>{{selectedSupplier.email}}</div></div>
+    <div class='dataItem'><label for="phone">Phone: </label><div>{{selectedSupplier.phone}}</div></div>
+    <div class='dataItem'><label for="address">Address: </label><div>{{selectedSupplier.address}}</div></div>
+  </section>
+  </div>
+</ng-container>
+<ng-template #nosupplierselected>
+  No supplier selected
+</ng-template>
+<p> <a routerLink='../../../suppliers'>Back</a></p>
+

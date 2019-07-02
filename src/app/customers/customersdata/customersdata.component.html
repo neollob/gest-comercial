@@ -1,4 +1,4 @@
-<ng-container>
+<ng-container *ngIf='selectedCust!=undefined; else nocustomerselected'>
   <div class="detail">
   <div class="header">
     <img src={{selectedCust.picture}} alt="">
@@ -18,5 +18,4 @@
 <ng-template #nocustomerselected>
   No customer selected
 </ng-template>
-
-
+<p> <a routerLink='../../../customers'>Back</a></p>

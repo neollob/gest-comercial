@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Customer from '../../shared/interfaces/customer.interface';
 import { ActivatedRoute } from '@angular/router';
-import customers from '../../shared/data/data.model';
+import customers from '../../shared/data/customers.model';
 
 @Component({
   selector: 'app-customersdata',
