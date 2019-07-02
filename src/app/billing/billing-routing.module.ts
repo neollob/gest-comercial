@@ -4,8 +4,8 @@ import { FromsuppliersComponent } from './fromsuppliers/fromsuppliers.component'
 import { TocustomersComponent } from './tocustomers/tocustomers.component';
 
 const routes: Routes = [
-  {path:'fromsuppliers',component: FromsuppliersComponent},
-  {path:'tocustomers',component: TocustomersComponent}
+  { path: 'fromsuppliers', component: FromsuppliersComponent },
+  { path: 'tocustomers', component: TocustomersComponent }
 ];
 
 @NgModule({

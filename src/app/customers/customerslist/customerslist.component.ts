@@ -7,9 +7,9 @@ import customers from '../../shared/data/customers.model';
   styleUrls: ['./customerslist.component.scss']
 })
 export class CustomerslistComponent implements OnInit {
-  customers=[];
+  customers = [];
   constructor() {
-    this.customers=customers;
+    this.customers = customers;
   }
 
   ngOnInit() {

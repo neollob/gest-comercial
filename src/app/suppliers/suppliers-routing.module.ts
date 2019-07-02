@@ -4,11 +4,11 @@ import { SupplierslistComponent } from './supplierslist/supplierslist.component'
 import { SuppliersrequestComponent } from './suppliersrequest/suppliersrequest.component';
 
 const routes: Routes = [{
-  path:'',
-  component:SupplierslistComponent
-  },{
-  path:'supplier_detail/:id',
-  component:SuppliersrequestComponent
+  path: '',
+  component: SupplierslistComponent
+}, {
+  path: 'supplier_detail/:id',
+  component: SuppliersrequestComponent
 }
 ];
 

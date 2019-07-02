@@ -7,9 +7,9 @@ import suppliers from '../../shared/data/suppliers.model';
   styleUrls: ['./supplierslist.component.scss']
 })
 export class SupplierslistComponent implements OnInit {
-  suppliers=[];
+  suppliers = [];
   constructor() {
-    this.suppliers=suppliers;
+    this.suppliers = suppliers;
   }
 
   ngOnInit() {

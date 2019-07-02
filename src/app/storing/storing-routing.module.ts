@@ -5,9 +5,9 @@ import { StoringincomingComponent } from './storingincoming/storingincoming.comp
 import { StoringoutgoingComponent } from './storingoutgoing/storingoutgoing.component';
 
 const routes: Routes = [
-  {path:'',component: StoringlistComponent},
-  {path:'in',component: StoringincomingComponent},
-  {path:'out',component: StoringoutgoingComponent}
+  { path: '', component: StoringlistComponent },
+  { path: 'in', component: StoringincomingComponent },
+  { path: 'out', component: StoringoutgoingComponent }
 ];
 
 @NgModule({

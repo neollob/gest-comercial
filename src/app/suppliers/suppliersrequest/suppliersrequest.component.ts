@@ -9,17 +9,18 @@ import suppliers from '../../shared/data/suppliers.model';
   styleUrls: ['./suppliersrequest.component.scss']
 })
 export class SuppliersrequestComponent implements OnInit {
-  identifier:any;
-  selectedSupplier:Supplier;
-  suppliers=[];
-  constructor(private supplier:ActivatedRoute) { }
+  identifier: any;
+  selectedSupplier: Supplier;
+  suppliers = [];
+  constructor(private supplier: ActivatedRoute) { }
 
   ngOnInit() {
-    this.suppliers=suppliers;
-    this.identifier=this.supplier.snapshot.params['id'];
-    this.selectedSupplier=this.suppliers.find((e)=>{
-      if (e.index==this.identifier)
+    this.suppliers = suppliers;
+    this.identifier = this.supplier.snapshot.params.id;
+    this.selectedSupplier = this.suppliers.find((e) => {
+      if (e.index == this.identifier) {
         return e;
+      }
     });
   }
 

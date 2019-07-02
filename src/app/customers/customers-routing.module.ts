@@ -5,12 +5,12 @@ import { CustomerdataComponent } from './customerdata/customerdata.component';
 
 const routes: Routes = [
   {
-  path:'',
-  component:CustomerslistComponent
-  },{
-  path:'customer_detail/:id',
-  component:CustomerdataComponent
-}
+    path: '',
+    component: CustomerslistComponent
+  }, {
+    path: 'customer_detail/:id',
+    component: CustomerdataComponent
+  }
 ];
 
 @NgModule({

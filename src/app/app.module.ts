@@ -15,7 +15,7 @@ import { SuppliersModule } from './suppliers/suppliers.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonsModule,CustomersModule,SuppliersModule
+    CommonsModule, CustomersModule, SuppliersModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -10,17 +10,19 @@ import customers from '../../shared/data/customers.model';
 })
 export class CustomerdataComponent implements OnInit {
   identifier: any;
-  selectedCust:Customer;
+  selectedCust: Customer;
   custom = [];
   constructor(private customer: ActivatedRoute) { }
   ngOnInit() {
     this.custom = customers;
-    this.identifier = this.customer.snapshot.params['id'];/**crea un elemento cada vez que clickamos */
-    //this.customer.subscribe(params=>{this.identifier=params['id']});/**crea un observable el cual se produce asincronamente  */
-    //@Input() cust:Customer;
+    this.identifier = this.customer.snapshot.params.id; /** crea un elemento cada vez que clickamos */
+    // this.identifier = this.customer.snapshot.params['id'];
+    // this.customer.subscribe(params=>{this.identifier=params['id']});/**crea un observable el cual se produce asincronamente  */
+    // @Input() cust:Customer;
     this.selectedCust = this.custom.find((e) => {
-      if (e.index == this.identifier)
+      if (e.index == this.identifier) {
         return e;
+      }
     });
   }
 }

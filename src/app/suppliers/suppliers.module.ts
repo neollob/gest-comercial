@@ -6,12 +6,12 @@ import { SuppliersrequestComponent } from './suppliersrequest/suppliersrequest.c
 import { SupplierslistComponent } from './supplierslist/supplierslist.component';
 
 @NgModule({
-  declarations: [SupplierslistComponent,SuppliersrequestComponent],
+  declarations: [SupplierslistComponent, SuppliersrequestComponent],
   imports: [
     CommonModule,
     SuppliersRoutingModule
   ],
-  exports: [SupplierslistComponent,SuppliersrequestComponent]
+  exports: [SupplierslistComponent, SuppliersrequestComponent]
 
 })
 export class SuppliersModule { }

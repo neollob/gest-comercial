@@ -6,11 +6,11 @@ import { FromsuppliersComponent } from './fromsuppliers/fromsuppliers.component'
 import { TocustomersComponent } from './tocustomers/tocustomers.component';
 
 @NgModule({
-  declarations: [FromsuppliersComponent,TocustomersComponent],
+  declarations: [FromsuppliersComponent, TocustomersComponent],
   imports: [
     CommonModule,
     BillingRoutingModule
   ],
-  exports: [FromsuppliersComponent,TocustomersComponent]
+  exports: [FromsuppliersComponent, TocustomersComponent]
 })
 export class BillingModule { }
