@@ -1,13 +1,16 @@
 <ng-container *ngIf='selectedSupplier!=undefined; else nosupplierselected'>
   <div class="detail">
   <div class="header">
-    <h3>{{selectedSupplier.company}}</h3>
+    <h3>{{selectedSupplier.name}}</h3>
   </div>
   <section>
     <div class='dataItem'><label for="balance">Balance: </label><div>{{selectedSupplier.balance}}</div></div>
     <div class='dataItem'><label for="email">e-Mail: </label><div>{{selectedSupplier.email}}</div></div>
     <div class='dataItem'><label for="phone">Phone: </label><div>{{selectedSupplier.phone}}</div></div>
     <div class='dataItem'><label for="address">Address: </label><div>{{selectedSupplier.address}}</div></div>
+    <div *ngFor='let worker of selectedSupplier.friends'>
+      <div>{{worker.name}}</div>
+    </div>
   </section>
   </div>
 </ng-container>

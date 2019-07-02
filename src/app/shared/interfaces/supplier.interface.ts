@@ -8,13 +8,19 @@ interface Supplier {
   isActive: boolean;
   balance: string;
   picture: string;
-  age: number;
-  eyeColor: string;
-  name: { first: string; last: string };
-  company: string;
+  name: string;
+  gender: string;
   email: string;
   phone: string;
   address: string;
+  about: string;
+  registered: string;
+  latitude: number;
+  longitude: number;
+  tags: string[];
+  friends: { id: number; name: string; }[];
+  greeting: string;
+  favoriteFruit: string;
 
 }
 export default Supplier;

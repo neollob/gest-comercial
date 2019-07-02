@@ -1,5 +1,5 @@
 <h3>Suppliers List</h3>
 
 <div *ngFor='let supplier of suppliers' class="list-group">
-  <a routerLink='supplier_detail/{{supplier.index}}' class="list-group-item list-group-item-action">{{supplier.name.first}} {{supplier.name.last}}</a>
+  <a routerLink='supplier_detail/{{supplier.index}}' class="list-group-item list-group-item-action">{{supplier.name}}</a>
 </div>
